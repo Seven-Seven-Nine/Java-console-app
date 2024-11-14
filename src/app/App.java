@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class App {
     private String nameProgram = "Console app";
-    private String versionProgram = "0.0.1";
+    private String versionProgram = "0.0.2";
     private Scanner scanner;
     private boolean debug = false;
 
     private String scanner(String colorInput) {
-        this.scanner = new Scanner(System.in);
+        this.scanner = new Scanner(System.in, "utf-8");
         switch (colorInput) {
             case "yellow":
                 System.out.print(ColorTerminal.bold() + ColorTerminal.yellow() + ">> " + ColorTerminal.end());
